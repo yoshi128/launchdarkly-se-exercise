@@ -15,12 +15,19 @@ This project showcases feature flagging, targeting, and metric tracking using La
 
 ## 📂 Project Structure
 ├── app.py # Flask app with / and /api/feature routes
+
 ├── flags.py # LaunchDarkly SDK setup + flag evaluation
+
 ├── test_plan.py # Testing rule-based targeting
+
 ├── templates/index.html
+
 ├── static/script.js
+
 ├── .env.example
+
 ├── requirements.txt
+
 
 ## 🛠️ Setup Instructions
 
@@ -52,16 +59,5 @@ curl http://localhost:5050/api/feature
 
 🙌 Author
 GitHub: yoshi128
-
-
----
-
-## 🌐 Part 3: Upload to GitHub
-
-### ✅ 1. Initialize Git (in your project folder)
-
-```bash
-cd /path/to/launchdarkly-se-exercise
-git init
 
 
