@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # LaunchDarkly SE Exercise – Jorge C.R.
 
 ## 🚀 Overview
@@ -98,4 +97,3 @@ When the “Get Started” button is clicked:
 
 **Jorge C.R.**  
 GitHub: [@yoshi128](https://github.com/yoshi128)
->>>>>>> 0e8f4f3 (Update README with full project instructions)
