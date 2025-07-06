@@ -49,6 +49,7 @@ touch .env
 
 # Open it in your editor and add your SDK key like this:
 LD_SDK_KEY=your-server-sdk-key-here
+Note: Your key is loaded automatically in flags.py using python-dotenv.
 
 5. Run the app
 python app.py
@@ -59,8 +60,6 @@ curl http://localhost:5050/api/feature
 # Or click the Get Started button on the homepage
 
 Flag is evaluated using the following context:
-
-
 Context.builder("user-key-123")
     .kind("user")
     .name("Jorge")
