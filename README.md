@@ -56,16 +56,9 @@ python app.py
 curl http://localhost:5050/api/feature
 # Or click the Get Started button on the homepage
 
-## ✨ Feature Flag Usage
-
-The UI shows or hides a "new feature" banner based on the `jcr-ui-feature` flag:
-
-- If the user’s `plan` is `"premium"` (or individually targeted), they see the 🎉 banner.
-- Otherwise, they see a 🚧 "Coming Soon" message.
-
 Flag is evaluated using the following context:
 
-```python
+
 Context.builder("user-key-123")
     .kind("user")
     .name("Jorge")
