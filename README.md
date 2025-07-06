@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LaunchDarkly SE Exercise – Jorge C.R.
 
 ## 🚀 Overview
@@ -56,8 +57,45 @@ python app.py
 curl http://localhost:5050/api/feature
 # Or click the Get Started button on the homepage
 
+## ✨ Feature Flag Usage
 
-🙌 Author
-GitHub: yoshi128
+The UI shows or hides a "new feature" banner based on the `jcr-ui-feature` flag:
 
+- If the user’s `plan` is `"premium"` (or individually targeted), they see the 🎉 banner.
+- Otherwise, they see a 🚧 "Coming Soon" message.
 
+Flag is evaluated using the following context:
+
+```python
+Context.builder("user-key-123")
+    .kind("user")
+    .name("Jorge")
+    .set("plan", "premium")
+    .build()
+```
+
+---
+
+## 📈 CTA Button Metric
+
+When the “Get Started” button is clicked:
+
+- A `POST` request is sent to `/api/cta-click`
+- The backend uses `ld_client.track()` to record the metric event
+- This feeds into the experiment set up in LaunchDarkly
+
+---
+
+## 📊 Experimentation (Extra Credit)
+
+- **Metric created**: `"CTA Clicks"`
+- **Experiment created**: Targeted users are split by the feature flag to measure impact
+- **Objective**: Understand how many users engage with the new feature via the CTA
+
+---
+
+## 🙌 Author
+
+**Jorge C.R.**  
+GitHub: [@yoshi128](https://github.com/yoshi128)
+>>>>>>> 0e8f4f3 (Update README with full project instructions)
