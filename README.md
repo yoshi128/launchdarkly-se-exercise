@@ -45,8 +45,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 4. Add your LaunchDarkly SDK key:
-cp .env.example .env
-# Edit .env and replace your-server-sdk-key-here with your real SDK key
+# Create a new .env file
+touch .env
+
+# Open it in your editor and add your SDK key like this:
+LD_SDK_KEY=your-server-sdk-key-here
 
 5. Run the app
 python app.py
